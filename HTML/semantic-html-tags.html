@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Task</title>
+    <style>
+      body {
+        margin: 0% 10%;
+        padding: 0px;
+        background-color: lightgray;
+      }
+
+      #pageHeader {
+        text-align: center;
+        font-size: xx-large;
+        font-style: italic;
+        font-weight: 900;
+        color: white;
+      }
+
+      #navbar {
+        background-color: pink;
+      }
+
+      .navlinks {
+        list-style-type: none;
+      }
+
+      .navlinks li {
+        display: inline-block;
+        padding: 15px 25px;
+      }
+
+      .navlinks a {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      #search {
+        height: 24px;
+      }
+      #btn {
+        padding: 5px 18px;
+        background-color: rgb(23, 19, 19);
+        color: white;
+        font-size: 14px;
+      }
+      .articlePartionDiv {
+        width: 100%;
+      }
+
+      .article {
+        width: 80%;
+        float: left;
+        background-color: white;
+        height: 630px;
+      }
+
+      .sidebar {
+        width: 20%;
+        float: left;
+        background-color: pink;
+        height: 630px;
+      }
+
+      .mainArticle {
+        background-color: white;
+        padding: 15px;
+      }
+
+      #articleHeader {
+        text-align: center;
+        font-size: xx-large;
+        font-style: italic;
+        font-weight: bolder;
+      }
+
+      #relatedHeader {
+        text-align: center;
+        font-size: xx-large;
+        font-style: italic;
+        font-weight: bolder;
+      }
+
+      .footer {
+        float: left;
+        width: 97%;
+        background-color: white;
+        padding: 15px;
+        margin: 15px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <!-- page header -->
+      <header>
+        <h1 id="pageHeader">Header</h1>
+        <!-- navigation bar -->
+        <nav id="navbar">
+          <!-- the navigation links are placed here -->
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">contacts</a></li>
+            <!-- search bar here -->
+            <li>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="search query"
+              />
+            </li>
+            <!-- go button here -->
+            <li><input type="button" id="btn" value="Go!" /></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="articlePartionDiv">
+        <!-- main page content -->
+        <main class="article">
+          <article class="mainArticle">
+            <header name="articleHeading">
+              <h1 id="articleHeader">Article Heading</h1>
+            </header>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              quidem facere quas dicta atque deleniti expedita consequuntur, cum
+              assumenda architecto saepe omnis quaerat modi tempore rerum nulla
+              velit minus beatae quis hic excepturi sed repellendus dignissimos
+              libero? Veniam nemo, unde possimus cumque, temporibus repellendus
+              eligendi alias minus quae culpa doloremque!
+            </p>
+
+            <section name="subsection1">
+              <h3>Article Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium animi earum pariatur. Odio sit odit quia in suscipit
+                temporibus dolore quo! Illum porro, aliquid accusamus possimus
+                qui labore dolorum, maxime et cumque quo dicta facilis
+                recusandae, veritatis repudiandae ut numquam ullam? Possimus
+                animi expedita fugit. Praesentium veniam neque veritatis
+                consequatur alias obcaecati, delectus velit voluptatibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                temporibus necessitatibus harum excepturi atque enim deleniti
+                facilis, rerum eius, dignissimos eum hic, porro modi. Cumque aut
+                ea atque necessitatibus quae similique incidunt dolores.
+                Pariatur amet ex architecto dignissimos voluptatibus corporis
+                doloribus tempore natus magni ducimus eveniet, odio velit, ut
+                fugiat dolores assumenda dolore? Assumenda molestias, aperiam
+                minus repellendus necessitatibus soluta.
+              </p>
+            </section>
+
+            <section name="subsection2">
+              <h3>Article Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, sunt necessitatibus temporibus ipsam quas accusantium
+                nihil incidunt aliquid impedit repellat voluptate vel architecto
+                repellendus aut earum facere eius explicabo exercitationem quis
+                libero quam laudantium voluptas excepturi. Suscipit sint velit
+                dignissimos nesciunt.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatibus tempora quasi soluta atque non aliquid, nulla
+                dolorem facere ullam dicta aut officia in qui magnam dolorum
+                neque et porro iste! Corrupti velit, obcaecati ipsam at
+                cupiditate iste voluptatem necessitatibus temporibus fugit aut,
+                possimus fugiat incidunt quae eius praesentium! Et, incidunt
+                quos.
+              </p>
+            </section>
+          </article>
+        </main>
+        <!-- sidebar -->
+        <aside name="rightSideBar" class="sidebar">
+          <h1 id="relatedHeader">Related</h1>
+          <ul class="relatedLinks">
+            <li><a href="#">Link-1</a></li>
+            <li><a href="#">Link-2</a></li>
+            <li><a href="#">Link-3</a></li>
+            <li><a href="#">Link-4</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer">
+        <!-- here we generally include copyright information or contact links -->
+        &copy;Copyright 2022 by Vishal Gade.
+      </footer>
+    </div>
+  </body>
+</html>
