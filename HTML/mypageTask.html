@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <style>
+      h1,
+      h2,
+      .buttons {
+        text-align: center;
+      }
+      form {
+        border: 1px solid grey;
+        background-color: rgb(225, 222, 222);
+        padding: 25px 20px;
+        margin: 10px 25%;
+      }
+      #date,
+      #day,
+      #favSub {
+        width: 170px;
+      }
+      #submit,
+      #reset {
+        padding: 10px 15px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+      #submit {
+        background-color: rgb(14, 107, 144);
+      }
+      #reset {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <caption>
+        <h1>My Page</h1>
+      </caption>
+      <form action="#">
+        <h1>Front-end Task#1</h1>
+        <hr />
+        <h4>
+          <label for="date">Today's Date : </label>
+          <input type="date" name="date" id="date" />
+        </h4>
+        <h4>
+          <label for="day">Today's Day : </label>
+          <select name="day" id="day">
+            <option value="def">Select Day</option>
+            <option value="sun">Sunday</option>
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wedn">Wednesday</option>
+            <option value="thur">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+          </select>
+        </h4>
+        <h2>About Me</h2>
+        <h3>
+          <label for="name">Full Name : </label>
+          <input type="text" name="name" id="name" />
+        </h3>
+        <h3>
+          <label for="favSub">Favourite Subject : </label>
+          <select name="favSub" id="favSub">
+            <option value="def">Select Subject</option>
+            <option value="mar">Marathi</option>
+            <option value="hin">Hindi</option>
+            <option value="eng">English</option>
+            <option value="hist">History</option>
+            <option value="geog">Geography</option>
+            <option value="math">Mathematics</option>
+            <option value="sci">Science</option>
+          </select>
+        </h3>
+        <div class="buttons">
+          <input type="submit" id="submit" value="Submit" />
+          <input type="reset" id="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
