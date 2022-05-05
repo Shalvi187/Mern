@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Both Palindrome</title>
+  </head>
+  <body>
+    <script>
+      //without buildIn logic
+      var string = "nitin";
+      var len = string.length;
+      var msg = `The given ${string} string is a palindrome`;
+      for (var i = 0; i < len / 2; i++) {
+        if (string[i] != string[len - 1 - i]) {
+          msg = `The given ${string} string is Not a Palindrome`;
+        }
+        console.log(`${string}:${msg}`);
+      }
+    </script>
+    <script>
+      // with BuildIn logic
+      var string = prompt("plz enter a string");
+      var stringArray = string.split(""); //conv string to array.
+      var stringReverse = stringArray.reverse(); //reverse of the array.
+      var revString = stringReverse.join(""); //conv array to string.
+      if (revString === string) {
+        console.log(`The given ${string} string is a Palindrome`);
+      } else {
+        console.log(`The given ${string} is NOT a Palindrome`);
+      }
+    </script>
+  </body>
+</html>
