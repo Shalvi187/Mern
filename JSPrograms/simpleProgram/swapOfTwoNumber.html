@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap of two numbers</title>
+  </head>
+  <body>
+    <!-- 1st way by using third(temp) variable -->
+    <!-- <script>
+      let a = 5;
+      let b = 6;
+      console.log(`before swapping the numbers a:${a} & b:${b}`);
+      let temp;
+      temp = a;
+      a = b;
+      b = temp;
+      console.log(`After swapping the numbers a:${a} & b:${b}`);
+    </script> -->
+
+    <!-- 2nd way by using third(temp) variable -->
+    <script>
+      let a = 12;
+      let b = 16;
+      console.log(`Before swapping the numbers a:${a} & b:${b}`);
+      a = a + b; //12+16 => 28
+      b = a - b; //28-16 => 12
+      a = a - b; //28-14 => 16
+      console.log(`After swapping the numbers a:${a} & b:${b}`);
+    </script>
+  </body>
+</html>
