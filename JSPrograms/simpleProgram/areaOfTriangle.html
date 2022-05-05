@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area Of Triangle</title>
+  </head>
+  <body>
+    <!-- area of a triangle -->
+    <!-- <script>
+      var len = prompt("enter the length of triangle");
+      var base = prompt("enter the base of triangle");
+      var area = (len * base) / 2;
+      console.log(
+        `The lenght is: ${len} & the base is: ${base} = area is:${area}`
+      );
+    </script> -->
+    <!-----Area of any triangle----->
+    <script>
+      var a = parseInt(prompt("enter first value")); //25
+      var b = parseInt(prompt("enter second value")); //28
+      var c = parseInt(prompt("enter third value")); //32
+      var s = (a + b + c) / 2;
+      var temp = s * (s - a) * (s - b) * (s - c);
+      var area = Math.sqrt(temp);
+      console.log(area); //336.5054791530147
+    </script>
+  </body>
+</html>
