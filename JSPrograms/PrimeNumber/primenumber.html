@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Number or Not</title>
+  </head>
+  <body>
+    <script>
+      // prime number or not
+      var number = prompt("plz enter a number");
+      if (number == 1) {
+        var res = `The given ${number} is neither prime nor composite.`;
+      } else if (number < 1) {
+        var res = `The given ${number} is not a prime number`;
+      } else {
+        for (var i = 2; i < number; i++) {
+          //from 2 to itself(num)
+          if (number % i == 0) {
+            //mod gives us Remainder
+            var res = `The given ${number} is NOT a prime number`;
+            break;
+          } else {
+            var res = `The given ${number} is a prime number`;
+          }
+        }
+        console.log(res);
+      }
+    </script>
+  </body>
+</html>
